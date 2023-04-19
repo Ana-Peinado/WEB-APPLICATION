@@ -1,0 +1,101 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js"></script>
+</head>
+<body>
+    <section class="container">
+    <div class="image-container">
+        <img src="https://media.istockphoto.com/id/871070868/es/foto/entrenamiento-de-ejercicio-de-mujer-en-la-%C3%BAltima-hora-de-fitness-gimnasio-relajarse-manteniendo.jpg?s=612x612&w=0&k=20&c=E2V52gy9M51fryw9m_nvsF_NVZ-P6QMgioqRdGCj-TE=" class="img" alt="gym">
+        <div class="button-container">
+            <a href="index.html">Home</a>
+            <a href="membercard.html">Member Card</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="trainers.html">Trainers</a>
+            <a href="rules.html">Our Rules</a>
+            <a href="prices.html">Prices</a>
+            <a href="contact.html">Contact</a>
+            <a href="index.html">Log In</a>
+            <a href="registrationForm.html">Sign Up</a>
+        </div>
+  
+  	    <form name="form1" action="#">
+            
+            <div class="Regform">
+                <h3>REGISTRATION FORM</h3>
+                <table class="MyTable">
+                    <tr><td><label for="forms">
+                            Name<br>
+                           <input id="name" name="name" /><br>
+                            </label>
+                        </td>
+                    </tr>
+   
+                   <tr><td><label for="forms">
+                            Username<br>
+                            <input id="username" name="username"/><br>
+                            </label>
+                        </td>
+                    </tr>
+   
+                   <tr><td><label for="forms">
+                            Password<br>
+                           <input id="password" name="password" type="password"/><br>
+                        </label></td>
+                    </tr>
+   
+                   <tr><td><label for="forms">
+                            Repeat password<br>
+                           <input id="repeatpassword" name="repeatpassword" type="password"/><br>
+                        </label></td>
+                    </tr>
+   
+                   <tr><td><label for="forms">
+                            Email<br>
+                           <input id="email" name="email"/><br>
+                        </label></td>
+                    </tr>
+   
+                   <tr><td><label for="forms">
+                            Gender<br>
+                           <label>&emsp;<input type="radio" id="male" name="gender" value="male" checked/> Male</label>
+                           <label>&emsp;<input type="radio" id="female" name="gender" value="male"/> Female</label>
+                        </label></td>
+                    </tr>
+   
+                   <tr><td><label for="forms">
+                            Telephone<br>
+                           <input id="telephone" name="telephone" maxlength="9" size="7"/><br>
+                       </label>
+                    </tr>
+   
+                   <tr><td><label for="forms">
+                            Country<br>
+                           <select>
+                               <option value="">Please choose a country</option>
+                               <option value="romania">Romania</option>
+                               <option value="spain">Spain</option>
+                           </select>
+                       </label>
+                    </tr>
+                </table>
+                
+                <div class="sendreset">
+                        <input type="submit" id="but" name="send" value="Send" onclick="validate( 
+                            document.getElementById('password').value,
+                            document.getElementById('repeatpassword').value,
+                            document.getElementById('email').value,
+                            document.getElementById('telephone').value)"/>
+                        <input type="reset" id="but" name="reset" value="Reset"/>
+                </div>
+            </div>
+     </form>
+    </div>
+    </section>
+</body>
+</html>
